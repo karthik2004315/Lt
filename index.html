@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container glass2">
+        <!-- Left Section: Source Language Input -->
+        <div class="left">
+            <h1>Source</h1>
+            <select id="sourceLang" class="dropdown">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <!-- Add more languages -->
+            </select>
+
+            <textarea id="sourceText" class="textarea" placeholder="Enter text to translate..."></textarea>
+            <button id="speakBtn" class="btn">🎤 Speak</button>
+            
+        </div>
+
+        <!-- Right Section: Target Language Output -->
+        <div class="right">
+            <h1>Target</h1>
+            <select id="targetLang" class="dropdown">
+                <option value="fr">French</option>
+                <option value="en">English</option>
+                <!-- Add more languages -->
+            </select>
+            
+            <textarea id="translatedText" class="textarea" readonly placeholder="Translated text will appear here..."></textarea>
+            <button id="playBtn" class="btn">🔊 Play Translation</button>
+            
+        </div>
+        <div class="translate-container">
+            <button id="translateBtn" class="btn translate-btn">Translate</button>
+        </div>
+    </div>
+
+    <!-- Video Background -->
+    <video autoplay muted loop>
+        <source src="istockphoto-844257418-640_adpp_is.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>
